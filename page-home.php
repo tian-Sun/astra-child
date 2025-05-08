@@ -183,7 +183,7 @@ get_header();
             $news = [
                 ['Arthur Chen and Zhuang Dafei Star in a Heartwarming Romance About Second Chances in Eat Run Love', '#', 'news1.jpg'],
                 ['Tiffany Tang and Liu Xueyi Deliver Unexpected Chemistry and High Drama in A Moment But Forever', '#', 'news2.jpg'],
-                ['The Glory: Chen Duling's Stunning Transformation from "Cold Beauty" to "Power Queen"', '#', 'news3.jpg'],
+                ["The Glory: Chen Duling's Stunning Transformation from Cold Beauty to Power Queen", '#', 'news3.jpg'],
                 ['Si Jin: The Ultimate Aesthetic and Thrilling Reversal in a Historical Revenge Drama – Totally Worth It!', '#', 'news4.jpg'],
             ];
             foreach ($news as $n) {
