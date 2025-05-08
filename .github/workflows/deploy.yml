@@ -1,0 +1,36 @@
+name: Deploy to WordPress
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          npm install -g sftp-deploy
+
+      - name: Deploy to WordPress
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
+        run: |
+          sftp-deploy --host $SFTP_HOST \
+                     --username $SFTP_USERNAME \
+                     --password $SFTP_PASSWORD \
+                     --remote-path $SFTP_REMOTE_PATH \
+                     --local-path . \
+                     --exclude .git,.github,node_modules 
