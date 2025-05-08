@@ -47,7 +47,11 @@ get_header();
                 ['Liu Yuning', '#', 'boystory_logo.png'],
                 ['Wang Yibo', '#', 'wayv_logo.png'],
                 ['Chen Zheyuan', '#', 'r1se_logo.png'],
+<<<<<<< HEAD
                 ['Cheng Y', '#', 'chengyi.jpg'],
+=======
+                ['Cheng Yi=', '#', 'chengyi.jpg'],
+>>>>>>> 533b7d418306079301a6bf98cb1b36f7fa27bb4b
                 ['Fan Chengcheng', '#', 'xnine_logo.png'],
                 ['Lin Yi', '#', 'tffamily_logo.png'],
                 ['Zhang Linghe', '#', 'sky_logo.png'],
