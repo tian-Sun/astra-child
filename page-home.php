@@ -84,7 +84,7 @@ get_header();
             <?php
             $dramas = [
                 ['The First Frost', '#', 'drama1.jpg'],
-                ['1Only for Love', '#', 'drama2.jpg'],
+                ['2Only for Love', '#', 'drama2.jpg'],
                 ['When I Fly Towards You', '#', 'drama3.jpg'],
                 ['Love in Pavilion', '#', 'drama4.jpg'],
                 ['Hidden Love', '#', 'drama5.jpg'],
