@@ -12,13 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v3.1.1
+      - name: Deploy with SFTP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          ftp-server: ${{ secrets.DEPLOY_HOST }}
-          ftp-username: ${{ secrets.DEPLOY_USER }}
-          ftp-password: ${{ secrets.DEPLOY_PASSWORD }}
-          protocol: sftp
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
-          local-dir: ./
-          server-dir: ${{ secrets.DEPLOY_PATH }}
+          source: "./*"
+          target: "/wp-content/themes/astra-child/"
