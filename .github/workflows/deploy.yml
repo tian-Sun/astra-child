@@ -23,14 +23,9 @@ jobs:
 
       - name: Deploy to WordPress
         env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-          SFTP_REMOTE_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
+          DEPLOY_HOST: ${{ secrets.SFTP_HOST }}
+          DEPLOY_USER: ${{ secrets.SFTP_USERNAME }}
+          DEPLOY_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          DEPLOY_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
         run: |
-          sftp-deploy --host $SFTP_HOST \
-                     --username $SFTP_USERNAME \
-                     --password $SFTP_PASSWORD \
-                     --remote-path $SFTP_REMOTE_PATH \
-                     --local-path . \
-                     --exclude .git,.github,node_modules 
+          sftp-deploy

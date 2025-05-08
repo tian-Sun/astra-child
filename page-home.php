@@ -47,7 +47,7 @@ get_header();
                 ['Liu Yuning', '#', 'boystory_logo.png'],
                 ['Wang Yibo', '#', 'wayv_logo.png'],
                 ['Chen Zheyuan', '#', 'r1se_logo.png'],
-                ['Cheng Yi ', '#', 'chengyi.jpg'],
+                ['Cheng Y', '#', 'chengyi.jpg'],
                 ['Fan Chengcheng', '#', 'xnine_logo.png'],
                 ['Lin Yi', '#', 'tffamily_logo.png'],
                 ['Zhang Linghe', '#', 'sky_logo.png'],
