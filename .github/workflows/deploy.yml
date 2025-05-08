@@ -21,4 +21,4 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: only-readme/
-          server-dir: /wp-content/themes/astra-child
+          server-dir: /wp-content/themes/astra-child/
