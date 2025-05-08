@@ -1,0 +1,16 @@
+# WordPress主题开发忽略文件
+.DS_Store
+node_modules/
+vendor/
+*.log
+*.sql
+*.sqlite
+.env
+.env.*
+!.env.example
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/ 
