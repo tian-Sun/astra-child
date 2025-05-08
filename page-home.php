@@ -43,11 +43,11 @@ get_header();
             <?php
             $boy_groups = [
                 ['Bai Jingting', '#', 'BaiJingting.jpg'],
-                ['Xiao Zhan', '#', 'into1_logo.png'],
+                ['Xiao Zhan', '#', 'xiaozhan.png'],
                 ['Liu Yuning', '#', 'boystory_logo.png'],
                 ['Wang Yibo', '#', 'wayv_logo.png'],
                 ['Chen Zheyuan', '#', 'r1se_logo.png'],
-                ['Cheng Yi', '#', 'tfboys_logo.png'],
+                ['Cheng Yi', '#', 'chengyi.jpg'],
                 ['Fan Chengcheng', '#', 'xnine_logo.png'],
                 ['Lin Yi', '#', 'tffamily_logo.png'],
                 ['Zhang Linghe', '#', 'sky_logo.png'],
