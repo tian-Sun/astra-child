@@ -17,16 +17,50 @@ get_header();
 .home-table th, .home-table td { padding: 8px 12px; text-align: left; }
 .home-table th { border-bottom: 2px solid #eee; }
 .home-table td { border-bottom: 1px solid #f5f5f5; }
-.home-card-list { display: flex; gap: 16px; flex-wrap: wrap; }
-.home-card { width: 120px; text-align: center; }
-.home-card img { width: 100%; border-radius: 8px; }
+.home-card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-card {
+  width: calc(20% - 16px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.home-card img {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
 .home-news-list { display: flex; gap: 16px; flex-wrap: wrap; }
 .home-news { width: 220px; }
 .home-news img { width: 100%; border-radius: 8px; }
 .home-news-title { font-size: 1em; margin: 8px 0 0 0; }
+@media (max-width: 1000px) {
+  .home-card {
+    width: calc(25% - 16px);
+  }
+}
 @media (max-width: 800px) {
-    .home-card-list, .home-news-list { flex-direction: column; }
-    .home-card, .home-news { width: 100%; }
+  .home-card {
+    width: calc(33.33% - 16px);
+  }
+}
+@media (max-width: 600px) {
+  .home-card {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 400px) {
+  .home-card-list {
+    flex-direction: column;
+  }
+  .home-card {
+    width: 100%;
+  }
 }
 .artist-list {
   display: flex;
@@ -68,6 +102,7 @@ get_header();
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #f3f3f3;
+  margin-top: 20px;
   margin-bottom: 12px;
 }
 
@@ -178,20 +213,19 @@ get_header();
 
     <!-- Chinese Dramas -->
     <div class="home-section">
-        <div class="home-title">Top10 Chinese Dramas</div>
+        <div class="home-title">Top10 Chinese Dramas(2025)</div>
         <div class="home-card-list">
             <?php
             $dramas = [
-                ['The First Frost', '#', 'drama1.jpg'],
-                ['2Only for Love', '#', 'drama2.jpg'],
-                ['When I Fly Towards You', '#', 'drama3.jpg'],
-                ['Love in Pavilion', '#', 'drama4.jpg'],
+                ['The First Frost', '#', 'TheFirstFrost.jpg'],
                 ['Love in Pavilion', '#', 'LoveinPavilion.png'],
-                ['Go to the Mountains and Sea', '#', 'drama6.jpg'],
-                ["The Demon Hunter's Romance", '#', 'drama6.jpg'],
-                ['Love Never Fails', '#', 'LoveNeverFails.jpeg'],
-                ['Joy of Life Season 2', '#', 'drama6.jpg'],
-                ['Kill My Sins', '#', 'drama6.jpg'],
+                ['The White Olive Tree', '#', 'TheWhiteOliveTree.jpg'],
+                ["The Demon Hunter's Romance", '#', 'TheDemonHunter.jpg'],
+                ['Kill My Sins', '#', 'KillMySins.jpg'],
+                ['The Glory', '#', 'TheGlory.jpg'],
+                ['A Moment but Forever', '#', 'AMomentButForever.jpg'],
+                ['Moonlight Mystique', '#', 'MoonlightMystique.jpg'],
+                ['Ski into Love', '#', 'SkiintoLove.jpg'],
             ];
             foreach ($dramas as $d) {
                 echo '<div class="home-card"><a href="' . $d[1] . '"><img src="' . get_stylesheet_directory_uri() . '/assets/' . $d[2] . '" alt="' . $d[0] . '"><div>' . $d[0] . '</div></a></div>';
