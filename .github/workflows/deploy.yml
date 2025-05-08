@@ -12,6 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: 准备只上传README
+        run: |
+          mkdir only-readme
+          cp README.md only-readme/
+
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -20,5 +25,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftp
-          local-dir: ./README.md
+          local-dir: only-readme/
           server-dir: /wp-content/themes/astra-child
