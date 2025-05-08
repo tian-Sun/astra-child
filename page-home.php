@@ -109,7 +109,7 @@ get_header();
 
     <!-- Top10 Boy & Girl Groups -->
     <div class="home-section">
-        <div class="home-title">Top10 C-DRAMA ACTORS & ACTRESSES INTERNATIONAL RANKING</div>
+        <div class="home-title">Top10 C-DRAMA ACTORS INTERNATIONAL RANKING</div>
         <div class="artist-list">
             <?php
             $boy_groups = [
@@ -124,6 +124,19 @@ get_header();
                 ['Xiao Zhan', '#', 'sky_logo.png'],
                 ['Bai Lu', '#', 'sky_logo.png'],
             ];
+            for ($i = 0; $i < 10; $i++) {
+                echo '<div class="artist-card top' . ($i + 1) . '">';
+                echo '<div class="rank-badge">TOP ' . ($i + 1) . '</div>';
+                echo '<img class="artist-avatar" src="' . get_stylesheet_directory_uri() . '/assets/' . $boy_groups[$i][2] . '" alt="' . $boy_groups[$i][0] . '">';
+                echo '<div class="artist-name">' . $boy_groups[$i][0] . '</div>';
+                echo '</div>';
+            }
+            ?>
+        </div>
+        <div class="home-section">
+        <div class="home-title">Top10 C-DRAMA ACTRESSES INTERNATIONAL RANKING</div>
+        <div class="artist-list">
+            <?php
             $girl_groups = [
                 ['Zhao Lusi', '#', 'the9_logo.png'],
                 ['Bai Lu', '#', 'bonbongirl_logo.png'],
@@ -139,8 +152,8 @@ get_header();
             for ($i = 0; $i < 10; $i++) {
                 echo '<div class="artist-card top' . ($i + 1) . '">';
                 echo '<div class="rank-badge">TOP ' . ($i + 1) . '</div>';
-                echo '<img class="artist-avatar" src="' . get_stylesheet_directory_uri() . '/assets/' . $boy_groups[$i][2] . '" alt="' . $boy_groups[$i][0] . '">';
-                echo '<div class="artist-name">' . $boy_groups[$i][0] . '</div>';
+                echo '<img class="artist-avatar" src="' . get_stylesheet_directory_uri() . '/assets/' . $girl_groups[$i][2] . '" alt="' . $girl_groups[$i][0] . '">';
+                echo '<div class="artist-name">' . $girl_groups[$i][0] . '</div>';
                 echo '</div>';
             }
             ?>
