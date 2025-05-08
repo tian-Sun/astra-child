@@ -141,10 +141,6 @@ get_header();
                 echo '<div class="rank-badge">TOP ' . ($i + 1) . '</div>';
                 echo '<img class="artist-avatar" src="' . get_stylesheet_directory_uri() . '/assets/' . $boy_groups[$i][2] . '" alt="' . $boy_groups[$i][0] . '">';
                 echo '<div class="artist-name">' . $boy_groups[$i][0] . '</div>';
-                echo '<div class="artist-rank-info">';
-                echo '<span class="global-rank">🌐 Global<br>TOP 1</span>';
-                echo '<span class="china-rank">🇨🇳 China<br>TOP 35</span>';
-                echo '</div>';
                 echo '</div>';
             }
             ?>
