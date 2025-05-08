@@ -14,7 +14,7 @@ jobs:
 
       - name: 准备只上传README
         run: |
-          mkdir only-readme
+          mkdir -p only-readme
           cp README.md only-readme/
 
       - name: FTP Deploy
