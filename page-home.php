@@ -130,15 +130,15 @@ get_header();
             <?php
             $boy_groups = [
                 ['Bai Jingting', '#', 'BaiJingting.jpg'],
-                ['Zhao Lusi', '#', 'ZhaoLusi.png'],
-                ['Esther Yu', '#', 'boystory_logo.png'],
-                ['Zhao Liying', '#', 'wayv_logo.png'],
-                ['Meng Zi Yi', '#', 'r1se_logo.png'],
-                ['Zhang Ruo Nan', '#', 'chengyi.jpg'],
-                ['Wang Yibo', '#', 'xnine_logo.png'],
-                ['Cheng Yi', '#', 'tffamily_logo.png'],
-                ['Xiao Zhan', '#', 'sky_logo.png'],
-                ['Bai Lu', '#', 'sky_logo.png'],
+                ['Wang Yibo', '#', 'WangYibo.jpg'],
+                ['Cheng Yi', '#', 'ChengYi.jpg'],
+                ['Xiao Zhan', '#', 'XiaoZhan.jpg'],
+                ['Xu Kai', '#', 'XuKai.jpg'],
+                ['Fan Chengcheng', '#', 'FanChengcheng.jpg'],
+                ['Liu Yuning', '#', 'LiuYuning.jpg'],
+                ['Chen Zheyuan', '#', 'ChenZheyuan.jpg'],
+                ['Ding Yuxi', '#', 'DingYuxi.jpg'],
+                ['Li Xian', '#', 'LiXian.jpg'],
             ];
             for ($i = 0; $i < 10; $i++) {
                 echo '<div class="artist-card top' . ($i + 1) . '">';
@@ -154,16 +154,16 @@ get_header();
         <div class="artist-list">
             <?php
             $girl_groups = [
-                ['Zhao Lusi', '#', 'the9_logo.png'],
-                ['Bai Lu', '#', 'bonbongirl_logo.png'],
-                ['Meng Ziyi', '#', '7senses_logo.png'],
-                ['Zhao Liying', '#', 'sing_logo.png'],
-                ['Zhang Ruonan', '#', 'snh48_logo.png'],
-                ['Esther Yu', '#', 'sevensense_logo.png'],
-                ['Ju Jingyi', '#', '3unshine_logo.png'],
-                ['Tiffany Yan', '#', 'chicchill_logo.png'],
-                ['Shen Yue', '#', 'sis_logo.png'],
-                ['Liu Shishi', '#', 'akb48_logo.png'],
+                ['Zhao Lusi', '#', 'ZhaoLusi.jpg'],
+                ['Esther Yu', '#', 'EstherYu.png'],
+                ['Zhao Liying', '#', 'ZhaoLiying.png'],
+                ['Meng Ziyi', '#', 'MengZiyi.png'],
+                ['Zhang Ruonan', '#', 'ZhangRuonan.png'],
+                ['Bai Lu', '#', 'BaiLu.png'],
+                ['Li Xueqin', '#', 'LiXueqin.png'],
+                ['Liu Shishi', '#', 'LiuShishi.png'],
+                ['Shen Yue', '#', 'ShenYue.jpg'],
+                ['Yang Mi', '#', 'YangMi.png'],
             ];
             for ($i = 0; $i < 10; $i++) {
                 echo '<div class="artist-card top' . ($i + 1) . '">';
@@ -186,10 +186,10 @@ get_header();
                 ['2Only for Love', '#', 'drama2.jpg'],
                 ['When I Fly Towards You', '#', 'drama3.jpg'],
                 ['Love in Pavilion', '#', 'drama4.jpg'],
-                ['Hidden Love', '#', 'drama5.jpg'],
+                ['Love in Pavilion', '#', 'LoveinPavilion.png'],
                 ['Go to the Mountains and Sea', '#', 'drama6.jpg'],
                 ["The Demon Hunter's Romance", '#', 'drama6.jpg'],
-                ['Eat Run Love', '#', 'drama6.jpg'],
+                ['Love Never Fails', '#', 'LoveNeverFails.jpeg'],
                 ['Joy of Life Season 2', '#', 'drama6.jpg'],
                 ['Kill My Sins', '#', 'drama6.jpg'],
             ];
