@@ -31,7 +31,7 @@ get_header();
 .artist-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
   justify-content: center;
 }
 
@@ -39,8 +39,8 @@ get_header();
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  width: 200px;
-  padding: 24px 16px 16px 16px;
+  width: 175px;
+  padding: 24px 12px 16px 12px;
   text-align: center;
   position: relative;
   transition: box-shadow 0.2s;
@@ -63,8 +63,8 @@ get_header();
 }
 
 .artist-avatar {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #f3f3f3;
@@ -72,7 +72,7 @@ get_header();
 }
 
 .artist-name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -91,6 +91,22 @@ get_header();
   color: #333;
   min-width: 60px;
   line-height: 1.2;
+}
+
+@media (max-width: 1000px) {
+  .artist-card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 850px) {
+  .artist-card {
+    width: 140px;
+  }
+  .artist-avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 600px) {
