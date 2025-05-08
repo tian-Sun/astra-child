@@ -20,5 +20,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftp
-          local-dir: ./
-          server-dir: /wp-content/themes/astra-child/
+          local-dir: ./README.md
+          server-dir: /wp-content/themes/astra-child
