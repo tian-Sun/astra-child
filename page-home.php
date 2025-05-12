@@ -5,7 +5,7 @@ Template Name: 简洁卡片式首页
 get_header();
 ?>
 
-<div style="width:100%;text-align:center;margin-top:20px;margin-bottom:10px;font-size:1.1em;color:#666;">
+<div style="position: absolute; right: 40px; top: 32px; font-size: 1.1em; color: #666; z-index: 10;">
     Ranking Last Updated: <?php echo date('F j, Y', strtotime('2025-05-12')); ?>
 </div>
 
@@ -14,6 +14,7 @@ get_header();
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 0;
+    text-align: center;
 }
 .home-section { margin: 40px 0; }
 .home-title { font-size: 2em; margin-bottom: 20px; }
