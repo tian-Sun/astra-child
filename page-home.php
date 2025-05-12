@@ -5,6 +5,10 @@ Template Name: 简洁卡片式首页
 get_header();
 ?>
 
+<div style="width:100%;text-align:center;margin-top:20px;margin-bottom:10px;font-size:1.1em;color:#666;">
+    Ranking Last Updated: <?php echo date('F j, Y', strtotime('2025-05-12')); ?>
+</div>
+
 <style>
 .container {
     max-width: 1100px;
@@ -237,6 +241,7 @@ get_header();
     </div>
 
     <!-- News -->
+    <!--
     <div class="home-section">
         <div class="home-title">News</div>
         <div class="home-news-list">
@@ -254,6 +259,7 @@ get_header();
             ?>
         </div>
     </div>
+    -->
 
 </div>
 
