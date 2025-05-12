@@ -165,15 +165,15 @@ get_header();
             <?php
             $boy_groups = [
                 ['Bai Jingting', '#', 'BaiJingting.jpg'],
-                ['Wang Yibo', '#', 'WangYibo.jpg'],
-                ['Cheng Yi', '#', 'ChengYi.jpg'],
                 ['Xiao Zhan', '#', 'XiaoZhan.jpg'],
-                ['Xu Kai', '#', 'XuKai.jpg'],
-                ['Fan Chengcheng', '#', 'FanChengcheng.jpg'],
                 ['Liu Yuning', '#', 'LiuYuning.jpg'],
-                ['Chen Zheyuan', '#', 'ChenZheyuan.jpg'],
                 ['Ding Yuxi', '#', 'DingYuxi.jpg'],
-                ['Li Xian', '#', 'LiXian.jpg'],
+                ['Wang Yibo', '#', 'WangYibo.jpg'],
+                ['Fan Chengcheng', '#', 'FanChengcheng.jpg'],
+                ['Tan Jianci', '#', 'TanJianci.jpg'],
+                ['Chen Zheyuan', '#', 'ChenZheyuan.jpg'],
+                ['Cheng Yi', '#', 'ChengYi.jpg'],
+                ['Xu Kai', '#', 'XuKai.jpg'],
             ];
             for ($i = 0; $i < 10; $i++) {
                 echo '<div class="artist-card top' . ($i + 1) . '">';
@@ -190,15 +190,15 @@ get_header();
             <?php
             $girl_groups = [
                 ['Zhao Lusi', '#', 'ZhaoLusi.jpg'],
-                ['Esther Yu', '#', 'EstherYu.png'],
-                ['Zhao Liying', '#', 'ZhaoLiying.png'],
-                ['Meng Ziyi', '#', 'MengZiyi.png'],
-                ['Zhang Ruonan', '#', 'ZhangRuonan.png'],
-                ['Bai Lu', '#', 'BaiLu.png'],
-                ['Li Xueqin', '#', 'LiXueqin.png'],
-                ['Liu Shishi', '#', 'LiuShishi.png'],
+                ['Zhao Liying', '#', 'ZhaoLiying.jpg'],
+                ['Meng Ziyi', '#', 'MengZiyi.jpg'],
+                ['Esther Yu', '#', 'EstherYu.jpg'],
+                ['Dilraba Dilmurat', '#', 'DilrabaDilmurat.jpg'],
+                ['Bai Lu', '#', 'BaiLu.jpg'],
+                ['Qi Wei', '#', 'QiWei.jpg'],
+                ['Zhang Ruonan', '#', 'ZhangRuonan.jpg'],
+                ['Liu Shishi', '#', 'LiuShishi.jpg'],
                 ['Shen Yue', '#', 'ShenYue.jpg'],
-                ['Yang Mi', '#', 'YangMi.png'],
             ];
             for ($i = 0; $i < 10; $i++) {
                 echo '<div class="artist-card top' . ($i + 1) . '">';
@@ -217,18 +217,20 @@ get_header();
         <div class="home-card-list">
             <?php
             $dramas = [
-                ['The First Frost', '#', 'TheFirstFrost.jpg'],
-                ['Love in Pavilion', '#', 'LoveinPavilion.png'],
-                ['The White Olive Tree', '#', 'TheWhiteOliveTree.jpg'],
-                ["The Demon Hunter's Romance", '#', 'TheDemonHunter.jpg'],
-                ['Kill My Sins', '#', 'KillMySins.jpg'],
-                ['The Glory', '#', 'TheGlory.jpg'],
-                ['A Moment but Forever', '#', 'AMomentButForever.jpg'],
-                ['Moonlight Mystique', '#', 'MoonlightMystique.jpg'],
-                ['Ski into Love', '#', 'SkiintoLove.jpg'],
+                ['Hidden Love', '#', 'HiddenLove.png'],
+                ['The First Frost', '#', 'TheFirstFrost.png'],
+                ['When I Fly Towards You', '#', 'WhenIFlyTowardsYou.png'],
+                ["Love in Pavilion", '#', 'LoveinPavilion.png'],
+                ['Only for Love', '#', 'OnlyforLove.png'],
+                ['The Journey of Legend', '#', 'TheJourneyofLegend.png'],
+                ['The White Olive Tree', '#', 'TheWhiteOliveTree.png'],
+                ['Guardians of the Dafeng', '#', 'GuardiansoftheDafeng.png'],
+                ['Till The End Of The Moon', '#', 'MoonlightMystique.png'],
+                ['Ski into Love', '#', 'SkiintoLove.png'],
             ];
             foreach ($dramas as $d) {
-                echo '<div class="home-card"><a href="' . $d[1] . '"><img src="' . get_stylesheet_directory_uri() . '/assets/' . $d[2] . '" alt="' . $d[0] . '"><div>' . $d[0] . '</div></a></div>';
+                $filename = pathinfo($d[2], PATHINFO_FILENAME);
+                echo '<div class="home-card"><a href="' . $d[1] . '"><img src="' . get_stylesheet_directory_uri() . '/assets/' . $d[2] . '" alt="' . $filename . '"><div>' . $d[0] . '</div></a></div>';
             }
             ?>
         </div>
@@ -246,7 +248,8 @@ get_header();
                 ['Si Jin: The Ultimate Aesthetic and Thrilling Reversal in a Historical Revenge Drama – Totally Worth It!', '#', 'news4.jpg'],
             ];
             foreach ($news as $n) {
-                echo '<div class="home-news"><a href="' . $n[1] . '"><img src="' . get_stylesheet_directory_uri() . '/assets/' . $n[2] . '" alt="' . $n[0] . '"><div class="home-news-title">' . $n[0] . '</div></a></div>';
+                $filename = pathinfo($n[2], PATHINFO_FILENAME);
+                echo '<div class="home-news"><a href="' . $n[1] . '"><img src="' . get_stylesheet_directory_uri() . '/assets/' . $n[2] . '" alt="' . $filename . '"><div class="home-news-title">' . $n[0] . '</div></a></div>';
             }
             ?>
         </div>
